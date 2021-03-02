@@ -1,0 +1,776 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 8250 4200 2    50   Input ~ 0
+SCL
+Text HLabel 8250 4000 2    50   Input ~ 0
+SDA
+Text HLabel 2600 2600 0    50   Input ~ 0
+PWR
+Text HLabel 2600 2700 0    50   Input ~ 0
+GND
+Text HLabel 9350 2650 2    50   Input ~ 0
+DOWN
+Text HLabel 9350 1650 2    50   Input ~ 0
+LEFT
+Text HLabel 9350 2000 2    50   Input ~ 0
+RIGHT
+Text HLabel 9350 2350 2    50   Input ~ 0
+CENTER
+Text HLabel 9350 1350 2    50   Input ~ 0
+UP
+$Comp
+L Device:R R12
+U 1 1 5FE6D45E
+P 8150 1000
+F 0 "R12" H 8220 1046 50  0000 L CNN
+F 1 "10k" H 8220 955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 8080 1000 50  0001 C CNN
+F 3 "~" H 8150 1000 50  0001 C CNN
+	1    8150 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0128
+U 1 1 5FE6E11C
+P 8150 800
+F 0 "#PWR0128" H 8150 650 50  0001 C CNN
+F 1 "+3.3V" H 8165 973 50  0000 C CNN
+F 2 "" H 8150 800 50  0001 C CNN
+F 3 "" H 8150 800 50  0001 C CNN
+	1    8150 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L dk_Tactile-Switches:1825910-6 SWU1
+U 1 1 5FE6944E
+P 6600 1450
+F 0 "SWU1" H 6600 1691 60  0000 C CNN
+F 1 "1825910-6" H 6600 1691 60  0001 C CNN
+F 2 "" H 6800 1650 60  0001 L CNN
+F 3 "" H 6800 1750 60  0001 L CNN
+F 4 "450-1650-ND" H 6800 1850 60  0001 L CNN "Digi-Key_PN"
+F 5 "1825910-6" H 6800 1950 60  0001 L CNN "MPN"
+F 6 "Switches" H 6800 2050 60  0001 L CNN "Category"
+F 7 "Tactile Switches" H 6800 2150 60  0001 L CNN "Family"
+F 8 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1825910&DocType=Customer+Drawing&DocLang=English" H 6800 2250 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/te-connectivity-alcoswitch-switches/1825910-6/450-1650-ND/1632536" H 6800 2350 60  0001 L CNN "DK_Detail_Page"
+F 10 "SWITCH TACTILE SPST-NO 0.05A 24V" H 6800 2450 60  0001 L CNN "Description"
+F 11 "TE Connectivity ALCOSWITCH Switches" H 6800 2550 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 6800 2650 60  0001 L CNN "Status"
+	1    6600 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR0129
+U 1 1 5FE6B205
+P 6250 1400
+F 0 "#PWR0129" H 6250 1150 50  0001 C CNN
+F 1 "Earth" H 6250 1250 50  0001 C CNN
+F 2 "" H 6250 1400 50  0001 C CNN
+F 3 "~" H 6250 1400 50  0001 C CNN
+	1    6250 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L dk_Tactile-Switches:1825910-6 SWC1
+U 1 1 5FE70AD5
+P 6600 2100
+F 0 "SWC1" H 6600 2341 60  0000 C CNN
+F 1 "1825910-6" H 6600 2341 60  0001 C CNN
+F 2 "" H 6800 2300 60  0001 L CNN
+F 3 "" H 6800 2400 60  0001 L CNN
+F 4 "450-1650-ND" H 6800 2500 60  0001 L CNN "Digi-Key_PN"
+F 5 "1825910-6" H 6800 2600 60  0001 L CNN "MPN"
+F 6 "Switches" H 6800 2700 60  0001 L CNN "Category"
+F 7 "Tactile Switches" H 6800 2800 60  0001 L CNN "Family"
+F 8 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1825910&DocType=Customer+Drawing&DocLang=English" H 6800 2900 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/te-connectivity-alcoswitch-switches/1825910-6/450-1650-ND/1632536" H 6800 3000 60  0001 L CNN "DK_Detail_Page"
+F 10 "SWITCH TACTILE SPST-NO 0.05A 24V" H 6800 3100 60  0001 L CNN "Description"
+F 11 "TE Connectivity ALCOSWITCH Switches" H 6800 3200 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 6800 3300 60  0001 L CNN "Status"
+	1    6600 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR0130
+U 1 1 5FE70ADE
+P 6250 2050
+F 0 "#PWR0130" H 6250 1800 50  0001 C CNN
+F 1 "Earth" H 6250 1900 50  0001 C CNN
+F 2 "" H 6250 2050 50  0001 C CNN
+F 3 "~" H 6250 2050 50  0001 C CNN
+	1    6250 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L dk_Tactile-Switches:1825910-6 SWD1
+U 1 1 5FE72EF9
+P 6600 2750
+F 0 "SWD1" H 6600 2991 60  0000 C CNN
+F 1 "1825910-6" H 6600 2991 60  0001 C CNN
+F 2 "" H 6800 2950 60  0001 L CNN
+F 3 "" H 6800 3050 60  0001 L CNN
+F 4 "450-1650-ND" H 6800 3150 60  0001 L CNN "Digi-Key_PN"
+F 5 "1825910-6" H 6800 3250 60  0001 L CNN "MPN"
+F 6 "Switches" H 6800 3350 60  0001 L CNN "Category"
+F 7 "Tactile Switches" H 6800 3450 60  0001 L CNN "Family"
+F 8 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1825910&DocType=Customer+Drawing&DocLang=English" H 6800 3550 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/te-connectivity-alcoswitch-switches/1825910-6/450-1650-ND/1632536" H 6800 3650 60  0001 L CNN "DK_Detail_Page"
+F 10 "SWITCH TACTILE SPST-NO 0.05A 24V" H 6800 3750 60  0001 L CNN "Description"
+F 11 "TE Connectivity ALCOSWITCH Switches" H 6800 3850 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 6800 3950 60  0001 L CNN "Status"
+	1    6600 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR0131
+U 1 1 5FE72F02
+P 6250 2700
+F 0 "#PWR0131" H 6250 2450 50  0001 C CNN
+F 1 "Earth" H 6250 2550 50  0001 C CNN
+F 2 "" H 6250 2700 50  0001 C CNN
+F 3 "~" H 6250 2700 50  0001 C CNN
+	1    6250 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L dk_Tactile-Switches:1825910-6 SWR1
+U 1 1 5FE74BB5
+P 7500 2100
+F 0 "SWR1" H 7500 2341 60  0000 C CNN
+F 1 "1825910-6" H 7500 2341 60  0001 C CNN
+F 2 "" H 7700 2300 60  0001 L CNN
+F 3 "" H 7700 2400 60  0001 L CNN
+F 4 "450-1650-ND" H 7700 2500 60  0001 L CNN "Digi-Key_PN"
+F 5 "1825910-6" H 7700 2600 60  0001 L CNN "MPN"
+F 6 "Switches" H 7700 2700 60  0001 L CNN "Category"
+F 7 "Tactile Switches" H 7700 2800 60  0001 L CNN "Family"
+F 8 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1825910&DocType=Customer+Drawing&DocLang=English" H 7700 2900 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/te-connectivity-alcoswitch-switches/1825910-6/450-1650-ND/1632536" H 7700 3000 60  0001 L CNN "DK_Detail_Page"
+F 10 "SWITCH TACTILE SPST-NO 0.05A 24V" H 7700 3100 60  0001 L CNN "Description"
+F 11 "TE Connectivity ALCOSWITCH Switches" H 7700 3200 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 7700 3300 60  0001 L CNN "Status"
+	1    7500 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR0132
+U 1 1 5FE74BBE
+P 7150 2050
+F 0 "#PWR0132" H 7150 1800 50  0001 C CNN
+F 1 "Earth" H 7150 1900 50  0001 C CNN
+F 2 "" H 7150 2050 50  0001 C CNN
+F 3 "~" H 7150 2050 50  0001 C CNN
+	1    7150 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L dk_Tactile-Switches:1825910-6 SWL1
+U 1 1 5FE78CE0
+P 5700 2100
+F 0 "SWL1" H 5700 2341 60  0000 C CNN
+F 1 "1825910-6" H 5700 2341 60  0001 C CNN
+F 2 "" H 5900 2300 60  0001 L CNN
+F 3 "" H 5900 2400 60  0001 L CNN
+F 4 "450-1650-ND" H 5900 2500 60  0001 L CNN "Digi-Key_PN"
+F 5 "1825910-6" H 5900 2600 60  0001 L CNN "MPN"
+F 6 "Switches" H 5900 2700 60  0001 L CNN "Category"
+F 7 "Tactile Switches" H 5900 2800 60  0001 L CNN "Family"
+F 8 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1825910&DocType=Customer+Drawing&DocLang=English" H 5900 2900 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/te-connectivity-alcoswitch-switches/1825910-6/450-1650-ND/1632536" H 5900 3000 60  0001 L CNN "DK_Detail_Page"
+F 10 "SWITCH TACTILE SPST-NO 0.05A 24V" H 5900 3100 60  0001 L CNN "Description"
+F 11 "TE Connectivity ALCOSWITCH Switches" H 5900 3200 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 5900 3300 60  0001 L CNN "Status"
+	1    5700 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR0133
+U 1 1 5FE78CE9
+P 5350 2050
+F 0 "#PWR0133" H 5350 1800 50  0001 C CNN
+F 1 "Earth" H 5350 1900 50  0001 C CNN
+F 2 "" H 5350 2050 50  0001 C CNN
+F 3 "~" H 5350 2050 50  0001 C CNN
+	1    5350 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R15
+U 1 1 5FE81D0A
+P 8450 1000
+F 0 "R15" H 8520 1046 50  0000 L CNN
+F 1 "10k" H 8520 955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 8380 1000 50  0001 C CNN
+F 3 "~" H 8450 1000 50  0001 C CNN
+	1    8450 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0134
+U 1 1 5FE81D10
+P 8450 800
+F 0 "#PWR0134" H 8450 650 50  0001 C CNN
+F 1 "+3.3V" H 8465 973 50  0000 C CNN
+F 2 "" H 8450 800 50  0001 C CNN
+F 3 "" H 8450 800 50  0001 C CNN
+	1    8450 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R13
+U 1 1 5FE824CF
+P 8800 1000
+F 0 "R13" H 8870 1046 50  0000 L CNN
+F 1 "10k" H 8870 955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 8730 1000 50  0001 C CNN
+F 3 "~" H 8800 1000 50  0001 C CNN
+	1    8800 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0135
+U 1 1 5FE824D5
+P 8800 800
+F 0 "#PWR0135" H 8800 650 50  0001 C CNN
+F 1 "+3.3V" H 8815 973 50  0000 C CNN
+F 2 "" H 8800 800 50  0001 C CNN
+F 3 "" H 8800 800 50  0001 C CNN
+	1    8800 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R16
+U 1 1 5FE82C32
+P 9100 1000
+F 0 "R16" H 9170 1046 50  0000 L CNN
+F 1 "10k" H 9170 955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 9030 1000 50  0001 C CNN
+F 3 "~" H 9100 1000 50  0001 C CNN
+	1    9100 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0136
+U 1 1 5FE82C38
+P 9100 800
+F 0 "#PWR0136" H 9100 650 50  0001 C CNN
+F 1 "+3.3V" H 9115 973 50  0000 C CNN
+F 2 "" H 9100 800 50  0001 C CNN
+F 3 "" H 9100 800 50  0001 C CNN
+	1    9100 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R14
+U 1 1 5FE835BF
+P 7850 1000
+F 0 "R14" H 7920 1046 50  0000 L CNN
+F 1 "10k" H 7920 955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 7780 1000 50  0001 C CNN
+F 3 "~" H 7850 1000 50  0001 C CNN
+	1    7850 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0137
+U 1 1 5FE835C5
+P 7850 800
+F 0 "#PWR0137" H 7850 650 50  0001 C CNN
+F 1 "+3.3V" H 7865 973 50  0000 C CNN
+F 2 "" H 7850 800 50  0001 C CNN
+F 3 "" H 7850 800 50  0001 C CNN
+	1    7850 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L DS3231:DS3231 U4A1
+U 1 1 5FDF4799
+P 5400 5250
+F 0 "U4A1" H 5400 5826 50  0000 C CNN
+F 1 "DS3231" H 5400 5250 50  0001 L BNN
+F 2 "DS3231:DS3231" H 5400 5250 50  0001 L BNN
+F 3 "" H 5400 5250 50  0001 L BNN
+	1    5400 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR0138
+U 1 1 5FDF9FF3
+P 6300 5900
+F 0 "#PWR0138" H 6300 5650 50  0001 C CNN
+F 1 "Earth" H 6300 5750 50  0001 C CNN
+F 2 "" H 6300 5900 50  0001 C CNN
+F 3 "~" H 6300 5900 50  0001 C CNN
+	1    6300 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR0139
+U 1 1 5FDFA623
+P 4550 5900
+F 0 "#PWR0139" H 4550 5650 50  0001 C CNN
+F 1 "Earth" H 4550 5750 50  0001 C CNN
+F 2 "" H 4550 5900 50  0001 C CNN
+F 3 "~" H 4550 5900 50  0001 C CNN
+	1    4550 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Memory_EEPROM:24LC64 U5
+U 1 1 5FDFC4D4
+P 2500 4900
+F 0 "U5" H 2500 5381 50  0000 C CNN
+F 1 "24LC64" H 2500 5290 50  0000 C CNN
+F 2 "" H 2500 4900 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21189f.pdf" H 2500 4900 50  0001 C CNN
+	1    2500 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0140
+U 1 1 5FDFE8D0
+P 7000 4650
+F 0 "#PWR0140" H 7000 4500 50  0001 C CNN
+F 1 "+3.3V" V 7015 4778 50  0000 L CNN
+F 2 "" H 7000 4650 50  0001 C CNN
+F 3 "" H 7000 4650 50  0001 C CNN
+	1    7000 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR0141
+U 1 1 5FDF9524
+P 7800 5500
+F 0 "#PWR0141" H 7800 5250 50  0001 C CNN
+F 1 "Earth" H 7800 5350 50  0001 C CNN
+F 2 "" H 7800 5500 50  0001 C CNN
+F 3 "~" H 7800 5500 50  0001 C CNN
+	1    7800 5500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:BAT54C D1
+U 1 1 5FDF57BE
+P 7000 5050
+F 0 "D1" V 6954 5138 50  0000 L CNN
+F 1 "BAT54C" V 7045 5138 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 7075 5175 50  0001 L CNN
+F 3 "http://www.diodes.com/_files/datasheets/ds11005.pdf" H 6920 5050 50  0001 C CNN
+	1    7000 5050
+	0    1    1    0   
+$EndComp
+$Comp
+L 1220:CH23-1220LF BT1
+U 1 1 5FE0D5F5
+P 7350 5500
+F 0 "BT1" H 7350 5770 50  0000 C CNN
+F 1 "1220Holder" H 7350 5679 50  0000 C CNN
+F 2 "CH23-1220LF" H 7350 5500 50  0001 L BNN
+F 3 "" H 7350 5500 50  0001 L BNN
+F 4 "CH23-1220LF" H 7350 5500 50  0001 L BNN "MP"
+F 5 "None" H 7350 5500 50  0001 L BNN "Package"
+F 6 "Unavailable" H 7350 5500 50  0001 L BNN "Availability"
+F 7 "BATTERY HOLDER, DIP, 12MM; Accessory Type: Coin Cell Battery Holder; For Use With: 1220 Coin Cell Batteries; Battery ..." H 7350 5500 50  0001 L BNN "Description"
+F 8 "Multicomp" H 7350 5500 50  0001 L BNN "MF"
+F 9 "None" H 7350 5500 50  0001 L BNN "Price"
+	1    7350 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0142
+U 1 1 5FE161D8
+P 1200 3450
+F 0 "#PWR0142" H 1200 3300 50  0001 C CNN
+F 1 "+3.3V" H 1215 3623 50  0000 C CNN
+F 2 "" H 1200 3450 50  0001 C CNN
+F 3 "" H 1200 3450 50  0001 C CNN
+	1    1200 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0143
+U 1 1 5FE16B26
+P 1800 3450
+F 0 "#PWR0143" H 1800 3300 50  0001 C CNN
+F 1 "+3.3V" H 1815 3623 50  0000 C CNN
+F 2 "" H 1800 3450 50  0001 C CNN
+F 3 "" H 1800 3450 50  0001 C CNN
+	1    1800 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R11
+U 1 1 5FE17B0F
+P 1200 3700
+F 0 "R11" H 1270 3746 50  0000 L CNN
+F 1 "4k7" H 1270 3655 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 1130 3700 50  0001 C CNN
+F 3 "~" H 1200 3700 50  0001 C CNN
+	1    1200 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R10
+U 1 1 5FE18288
+P 1800 3700
+F 0 "R10" H 1870 3746 50  0000 L CNN
+F 1 "4k7" H 1870 3655 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 1730 3700 50  0001 C CNN
+F 3 "~" H 1800 3700 50  0001 C CNN
+	1    1800 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0144
+U 1 1 5FE23EE4
+P 4550 4750
+F 0 "#PWR0144" H 4550 4600 50  0001 C CNN
+F 1 "+3.3V" H 4565 4923 50  0000 C CNN
+F 2 "" H 4550 4750 50  0001 C CNN
+F 3 "" H 4550 4750 50  0001 C CNN
+	1    4550 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR0145
+U 1 1 5FE2B507
+P 1800 5400
+F 0 "#PWR0145" H 1800 5150 50  0001 C CNN
+F 1 "Earth" H 1800 5250 50  0001 C CNN
+F 2 "" H 1800 5400 50  0001 C CNN
+F 3 "~" H 1800 5400 50  0001 C CNN
+	1    1800 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR0146
+U 1 1 5FE5D11B
+P 8200 3000
+F 0 "#PWR0146" H 8200 2750 50  0001 C CNN
+F 1 "Earth" H 8200 2850 50  0001 C CNN
+F 2 "" H 8200 3000 50  0001 C CNN
+F 3 "~" H 8200 3000 50  0001 C CNN
+	1    8200 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 5900 4550 5550
+Wire Wire Line
+	4550 5550 4800 5550
+Wire Wire Line
+	4550 5550 4550 5450
+Wire Wire Line
+	4550 5250 4800 5250
+Connection ~ 4550 5550
+Wire Wire Line
+	4800 5350 4550 5350
+Connection ~ 4550 5350
+Wire Wire Line
+	4550 5350 4550 5250
+Wire Wire Line
+	4800 5450 4550 5450
+Connection ~ 4550 5450
+Wire Wire Line
+	4550 5450 4550 5350
+Wire Wire Line
+	6300 5900 6300 5550
+Wire Wire Line
+	6300 5150 6000 5150
+Wire Wire Line
+	6000 5250 6300 5250
+Connection ~ 6300 5250
+Wire Wire Line
+	6300 5250 6300 5150
+Wire Wire Line
+	6000 5350 6300 5350
+Connection ~ 6300 5350
+Wire Wire Line
+	6300 5350 6300 5250
+Wire Wire Line
+	6000 5450 6300 5450
+Connection ~ 6300 5450
+Wire Wire Line
+	6300 5450 6300 5350
+Wire Wire Line
+	6000 5550 6300 5550
+Connection ~ 6300 5550
+Wire Wire Line
+	6300 5550 6300 5450
+Wire Wire Line
+	4550 4750 4550 4950
+Wire Wire Line
+	4550 4950 4800 4950
+Wire Wire Line
+	1800 5400 1800 5300
+Wire Wire Line
+	1800 4800 2100 4800
+Wire Wire Line
+	2100 4900 1800 4900
+Connection ~ 1800 4900
+Wire Wire Line
+	1800 4900 1800 4800
+Wire Wire Line
+	2100 5000 1800 5000
+Connection ~ 1800 5000
+Wire Wire Line
+	1800 5000 1800 4900
+Wire Wire Line
+	2500 5200 2500 5300
+Wire Wire Line
+	2500 5300 1800 5300
+Connection ~ 1800 5300
+Wire Wire Line
+	1800 5300 1800 5000
+Wire Wire Line
+	2500 5300 3100 5300
+Wire Wire Line
+	3100 5300 3100 5000
+Wire Wire Line
+	3100 5000 2900 5000
+Connection ~ 2500 5300
+Wire Wire Line
+	2900 4800 3100 4800
+Wire Wire Line
+	3100 4800 3100 4000
+Connection ~ 3100 4000
+Wire Wire Line
+	2900 4900 3200 4900
+Wire Wire Line
+	3200 4900 3200 4200
+Connection ~ 3200 4200
+Wire Wire Line
+	3200 4200 6100 4200
+Wire Wire Line
+	6000 4850 6100 4850
+Wire Wire Line
+	6100 4850 6100 4200
+Connection ~ 6100 4200
+Wire Wire Line
+	3100 4000 6200 4000
+Wire Wire Line
+	6000 4950 6200 4950
+Wire Wire Line
+	6200 4950 6200 4000
+Connection ~ 6200 4000
+Wire Wire Line
+	7000 4650 7000 4750
+Wire Wire Line
+	7000 5350 7000 5500
+Wire Wire Line
+	7000 5500 7150 5500
+Wire Wire Line
+	7550 5500 7800 5500
+Wire Wire Line
+	6800 5050 6000 5050
+Wire Wire Line
+	6200 4000 8250 4000
+Wire Wire Line
+	6100 4200 8250 4200
+Wire Wire Line
+	1800 3850 1800 4000
+Wire Wire Line
+	1800 4000 3100 4000
+Wire Wire Line
+	1800 3450 1800 3550
+Wire Wire Line
+	1200 3450 1200 3550
+Wire Wire Line
+	1200 3850 1200 4200
+Wire Wire Line
+	1200 4200 3200 4200
+Wire Wire Line
+	6250 1400 6250 1350
+Wire Wire Line
+	6250 1350 6350 1350
+Wire Wire Line
+	6400 1550 6350 1550
+Wire Wire Line
+	6350 1550 6350 1350
+Connection ~ 6350 1350
+Wire Wire Line
+	6350 1350 6400 1350
+Wire Wire Line
+	5350 2050 5350 2000
+Wire Wire Line
+	5350 2000 5450 2000
+Wire Wire Line
+	5450 2000 5450 2200
+Wire Wire Line
+	5450 2200 5500 2200
+Connection ~ 5450 2000
+Wire Wire Line
+	5450 2000 5500 2000
+Wire Wire Line
+	6250 2050 6250 2000
+Wire Wire Line
+	6250 2000 6350 2000
+Wire Wire Line
+	6400 2200 6350 2200
+Wire Wire Line
+	6350 2200 6350 2000
+Connection ~ 6350 2000
+Wire Wire Line
+	6350 2000 6400 2000
+Wire Wire Line
+	6250 2700 6250 2650
+Wire Wire Line
+	6250 2650 6350 2650
+Wire Wire Line
+	6400 2850 6350 2850
+Wire Wire Line
+	6350 2850 6350 2650
+Connection ~ 6350 2650
+Wire Wire Line
+	6350 2650 6400 2650
+Wire Wire Line
+	7150 2050 7150 2000
+Wire Wire Line
+	7150 2000 7250 2000
+Wire Wire Line
+	7300 2200 7250 2200
+Wire Wire Line
+	7250 2200 7250 2000
+Connection ~ 7250 2000
+Wire Wire Line
+	7250 2000 7300 2000
+Wire Wire Line
+	9350 1350 8750 1350
+Wire Wire Line
+	9350 1650 8550 1650
+Wire Wire Line
+	6000 1650 6000 2000
+Wire Wire Line
+	6000 2000 5900 2000
+Wire Wire Line
+	7700 2000 7800 2000
+Wire Wire Line
+	6800 2000 6900 2000
+Wire Wire Line
+	6900 2000 6900 2200
+Wire Wire Line
+	6900 2350 8800 2350
+Wire Wire Line
+	6800 2650 6900 2650
+Wire Wire Line
+	6800 2200 6900 2200
+Connection ~ 6900 2200
+Wire Wire Line
+	6900 2200 6900 2350
+Wire Wire Line
+	5900 2200 6000 2200
+Wire Wire Line
+	6000 2200 6000 2000
+Connection ~ 6000 2000
+Wire Wire Line
+	6800 1550 6900 1550
+Wire Wire Line
+	6900 1550 6900 1350
+Connection ~ 6900 1350
+Wire Wire Line
+	6900 1350 6800 1350
+Wire Wire Line
+	7700 2200 7800 2200
+Wire Wire Line
+	7800 2200 7800 2000
+Connection ~ 7800 2000
+Wire Wire Line
+	7800 2000 8450 2000
+Wire Wire Line
+	6800 2850 6900 2850
+Wire Wire Line
+	6900 2850 6900 2650
+Connection ~ 6900 2650
+Wire Wire Line
+	6900 2650 8650 2650
+$Comp
+L Connector_Generic:Conn_01x06 P4
+U 1 1 600D6F51
+P 8750 3200
+F 0 "P4" V 8622 3480 50  0000 L CNN
+F 1 "Conn_01x06" V 8713 3480 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Horizontal" H 8750 3200 50  0001 C CNN
+F 3 "~" H 8750 3200 50  0001 C CNN
+	1    8750 3200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8950 3000 8950 2000
+Connection ~ 8950 2000
+Wire Wire Line
+	8950 2000 9350 2000
+Wire Wire Line
+	8850 3000 8850 2350
+Connection ~ 8850 2350
+Wire Wire Line
+	8850 2350 9350 2350
+Wire Wire Line
+	8750 3000 8750 1350
+Connection ~ 8750 1350
+Wire Wire Line
+	8750 1350 7850 1350
+Wire Wire Line
+	8650 3000 8650 2650
+Connection ~ 8650 2650
+Wire Wire Line
+	8650 2650 9100 2650
+Wire Wire Line
+	8550 3000 8550 1650
+Connection ~ 8550 1650
+Wire Wire Line
+	8200 3000 8200 2900
+Wire Wire Line
+	8200 2900 8450 2900
+Wire Wire Line
+	8450 2900 8450 3000
+Wire Wire Line
+	7850 1150 7850 1350
+Connection ~ 7850 1350
+Wire Wire Line
+	7850 1350 6900 1350
+Wire Wire Line
+	8150 1150 8150 1650
+Connection ~ 8150 1650
+Wire Wire Line
+	8150 1650 6000 1650
+Wire Wire Line
+	8550 1650 8150 1650
+Wire Wire Line
+	8450 1150 8450 2000
+Connection ~ 8450 2000
+Wire Wire Line
+	8450 2000 8950 2000
+Wire Wire Line
+	8800 1150 8800 2350
+Connection ~ 8800 2350
+Wire Wire Line
+	8800 2350 8850 2350
+Wire Wire Line
+	9100 1150 9100 2650
+Connection ~ 9100 2650
+Wire Wire Line
+	9100 2650 9350 2650
+Wire Wire Line
+	9100 850  9100 800 
+Wire Wire Line
+	8800 850  8800 800 
+Wire Wire Line
+	8450 850  8450 800 
+Wire Wire Line
+	8150 850  8150 800 
+Wire Wire Line
+	7850 850  7850 800 
+$EndSCHEMATC

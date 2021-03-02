@@ -1,0 +1,645 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 5200 5400 2    50   Input ~ 0
+Output2
+Text HLabel 5200 4700 2    50   Input ~ 0
+Output1
+Text HLabel 8500 2550 2    50   Input ~ 0
+433Tx
+Text HLabel 5650 3050 2    50   Input ~ 0
+Input1
+Text HLabel 8500 1650 2    50   Input ~ 0
+433Rx
+Text HLabel 4350 6500 2    50   Input ~ 0
+AlgInput
+$Comp
+L Connector_Generic:Conn_01x04 P1
+U 1 1 602054BC
+P 8150 1750
+F 0 "P1" H 8150 1450 50  0000 C CNN
+F 1 "433MHzRx" H 8450 1700 50  0000 C CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_1x04_P2.00mm_Vertical" H 8150 1750 50  0001 C CNN
+F 3 "~" H 8150 1750 50  0001 C CNN
+	1    8150 1750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 P2
+U 1 1 602066CB
+P 8150 2550
+F 0 "P2" H 8150 2350 50  0000 C CNN
+F 1 "433MHzTx" H 8450 2550 50  0000 C CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_1x03_P2.00mm_Vertical" H 8150 2550 50  0001 C CNN
+F 3 "~" H 8150 2550 50  0001 C CNN
+	1    8150 2550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8500 1650 8400 1650
+Wire Wire Line
+	8400 1650 8400 1750
+Wire Wire Line
+	8400 1750 8350 1750
+Connection ~ 8400 1650
+Wire Wire Line
+	8400 1650 8350 1650
+Wire Wire Line
+	8500 2550 8350 2550
+$Comp
+L power:+5V #PWR0160
+U 1 1 60208B3C
+P 8500 1500
+F 0 "#PWR0160" H 8500 1350 50  0001 C CNN
+F 1 "+5V" H 8515 1673 50  0000 C CNN
+F 2 "" H 8500 1500 50  0001 C CNN
+F 3 "" H 8500 1500 50  0001 C CNN
+	1    8500 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0161
+U 1 1 60209478
+P 8500 2400
+F 0 "#PWR0161" H 8500 2250 50  0001 C CNN
+F 1 "+5V" H 8515 2573 50  0000 C CNN
+F 2 "" H 8500 2400 50  0001 C CNN
+F 3 "" H 8500 2400 50  0001 C CNN
+	1    8500 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8500 2400 8500 2450
+Wire Wire Line
+	8500 2450 8350 2450
+Wire Wire Line
+	8350 1550 8500 1550
+Wire Wire Line
+	8500 1550 8500 1500
+$Comp
+L power:Earth #PWR0162
+U 1 1 6020D329
+P 8500 1900
+F 0 "#PWR0162" H 8500 1650 50  0001 C CNN
+F 1 "Earth" H 8500 1750 50  0001 C CNN
+F 2 "" H 8500 1900 50  0001 C CNN
+F 3 "~" H 8500 1900 50  0001 C CNN
+	1    8500 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8500 1900 8500 1850
+Wire Wire Line
+	8500 1850 8350 1850
+$Comp
+L Connector_Generic:Conn_01x07 P3
+U 1 1 6020EE5F
+P 2250 4150
+F 0 "P3" H 2168 3625 50  0000 C CNN
+F 1 "B6B-PH-K-S" H 2168 3716 50  0000 C CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_1x07_P2.00mm_Vertical" H 2250 4150 50  0001 C CNN
+F 3 "~" H 2250 4150 50  0001 C CNN
+	1    2250 4150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Diode:BAT54S D3
+U 1 1 6020FDEB
+P 3750 3050
+F 0 "D3" H 3750 3275 50  0000 C CNN
+F 1 "BAT54S" H 3750 3184 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3825 3175 50  0001 L CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds11005.pdf" H 3630 3050 50  0001 C CNN
+	1    3750 3050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R18
+U 1 1 60212AE3
+P 3250 3050
+F 0 "R18" V 3043 3050 50  0000 C CNN
+F 1 "470" V 3134 3050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 3180 3050 50  0001 C CNN
+F 3 "~" H 3250 3050 50  0001 C CNN
+	1    3250 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L dk_Transistors-Bipolar-BJT-Single:BC817-40_215 Q1
+U 1 1 602154A1
+P 5300 3300
+F 0 "Q1" H 5488 3353 60  0000 L CNN
+F 1 "BC817K-40_215" H 5488 3247 60  0000 L CNN
+F 2 "digikey-footprints:SOT-23-3" H 5500 3500 60  0001 L CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BC817K_SER.pdf" H 5500 3600 60  0001 L CNN
+F 4 "" H 5500 3700 60  0001 L CNN "Digi-Key_PN"
+F 5 "" H 5500 3800 60  0001 L CNN "MPN"
+F 6 "" H 5500 3900 60  0001 L CNN "Category"
+F 7 "" H 5500 4000 60  0001 L CNN "Family"
+F 8 "" H 5500 4100 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "" H 5500 4200 60  0001 L CNN "DK_Detail_Page"
+F 10 "" H 5500 4300 60  0001 L CNN "Description"
+F 11 "" H 5500 4400 60  0001 L CNN "Manufacturer"
+F 12 "" H 5500 4500 60  0001 L CNN "Status"
+	1    5300 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR0163
+U 1 1 60217324
+P 5400 3550
+F 0 "#PWR0163" H 5400 3300 50  0001 C CNN
+F 1 "Earth" H 5400 3400 50  0001 C CNN
+F 2 "" H 5400 3550 50  0001 C CNN
+F 3 "~" H 5400 3550 50  0001 C CNN
+	1    5400 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 3050 5400 3050
+Wire Wire Line
+	5400 3050 5400 3100
+Wire Wire Line
+	5400 3500 5400 3550
+Wire Wire Line
+	5100 3300 4950 3300
+Wire Wire Line
+	4650 3300 4400 3300
+Wire Wire Line
+	4400 3300 4400 3200
+Wire Wire Line
+	4400 2900 4400 2850
+$Comp
+L power:+3.3V #PWR0164
+U 1 1 60218AEA
+P 4400 2850
+F 0 "#PWR0164" H 4400 2700 50  0001 C CNN
+F 1 "+3.3V" H 4415 3023 50  0000 C CNN
+F 2 "" H 4400 2850 50  0001 C CNN
+F 3 "" H 4400 2850 50  0001 C CNN
+	1    4400 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 3300 3750 3250
+Wire Wire Line
+	3450 3050 3400 3050
+Wire Wire Line
+	3100 3050 2800 3050
+Wire Wire Line
+	2800 3050 2800 3850
+Wire Wire Line
+	2800 3850 2450 3850
+$Comp
+L Device:R R19
+U 1 1 6021B167
+P 4800 3300
+F 0 "R19" V 5007 3300 50  0000 C CNN
+F 1 "10k" V 4916 3300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 4730 3300 50  0001 C CNN
+F 3 "~" H 4800 3300 50  0001 C CNN
+	1    4800 3300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R17
+U 1 1 6021AD7F
+P 4400 3050
+F 0 "R17" H 4330 3004 50  0000 R CNN
+F 1 "10k" H 4330 3095 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 4330 3050 50  0001 C CNN
+F 3 "~" H 4400 3050 50  0001 C CNN
+	1    4400 3050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4050 3050 4100 3050
+$Comp
+L power:Earth #PWR0165
+U 1 1 6021337B
+P 4100 3050
+F 0 "#PWR0165" H 4100 2800 50  0001 C CNN
+F 1 "Earth" H 4100 2900 50  0001 C CNN
+F 2 "" H 4100 3050 50  0001 C CNN
+F 3 "~" H 4100 3050 50  0001 C CNN
+	1    4100 3050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4400 3300 3750 3300
+Connection ~ 4400 3300
+Text HLabel 5650 3950 2    50   Input ~ 0
+Input2
+$Comp
+L Diode:BAT54S D4
+U 1 1 60233BCF
+P 3750 3950
+F 0 "D4" H 3750 4175 50  0000 C CNN
+F 1 "BAT54S" H 3750 4084 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3825 4075 50  0001 L CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds11005.pdf" H 3630 3950 50  0001 C CNN
+	1    3750 3950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R21
+U 1 1 60233BD5
+P 3250 3950
+F 0 "R21" V 3043 3950 50  0000 C CNN
+F 1 "470" V 3134 3950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 3180 3950 50  0001 C CNN
+F 3 "~" H 3250 3950 50  0001 C CNN
+	1    3250 3950
+	0    1    1    0   
+$EndComp
+$Comp
+L dk_Transistors-Bipolar-BJT-Single:BC817-40_215 Q2
+U 1 1 60233BE4
+P 5300 4200
+F 0 "Q2" H 5488 4253 60  0000 L CNN
+F 1 "BC817K-40_215" H 5488 4147 60  0000 L CNN
+F 2 "digikey-footprints:SOT-23-3" H 5500 4400 60  0001 L CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BC817K_SER.pdf" H 5500 4500 60  0001 L CNN
+F 4 "" H 5500 4600 60  0001 L CNN "Digi-Key_PN"
+F 5 "" H 5500 4700 60  0001 L CNN "MPN"
+F 6 "" H 5500 4800 60  0001 L CNN "Category"
+F 7 "" H 5500 4900 60  0001 L CNN "Family"
+F 8 "" H 5500 5000 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "" H 5500 5100 60  0001 L CNN "DK_Detail_Page"
+F 10 "" H 5500 5200 60  0001 L CNN "Description"
+F 11 "" H 5500 5300 60  0001 L CNN "Manufacturer"
+F 12 "" H 5500 5400 60  0001 L CNN "Status"
+	1    5300 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR0166
+U 1 1 60233BEA
+P 5400 4450
+F 0 "#PWR0166" H 5400 4200 50  0001 C CNN
+F 1 "Earth" H 5400 4300 50  0001 C CNN
+F 2 "" H 5400 4450 50  0001 C CNN
+F 3 "~" H 5400 4450 50  0001 C CNN
+	1    5400 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 3950 5400 3950
+Wire Wire Line
+	5400 3950 5400 4000
+Wire Wire Line
+	5400 4400 5400 4450
+Wire Wire Line
+	5100 4200 4950 4200
+Wire Wire Line
+	4650 4200 4400 4200
+Wire Wire Line
+	4400 4200 4400 4100
+Wire Wire Line
+	4400 3800 4400 3750
+$Comp
+L power:+3.3V #PWR0167
+U 1 1 60233BF7
+P 4400 3750
+F 0 "#PWR0167" H 4400 3600 50  0001 C CNN
+F 1 "+3.3V" H 4415 3923 50  0000 C CNN
+F 2 "" H 4400 3750 50  0001 C CNN
+F 3 "" H 4400 3750 50  0001 C CNN
+	1    4400 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 4200 3750 4150
+Wire Wire Line
+	3450 3950 3400 3950
+$Comp
+L Device:R R22
+U 1 1 60233C00
+P 4800 4200
+F 0 "R22" V 4593 4200 50  0000 C CNN
+F 1 "10k" V 4684 4200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 4730 4200 50  0001 C CNN
+F 3 "~" H 4800 4200 50  0001 C CNN
+	1    4800 4200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R20
+U 1 1 60233C06
+P 4400 3950
+F 0 "R20" H 4330 3904 50  0000 R CNN
+F 1 "10k" H 4330 3995 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 4330 3950 50  0001 C CNN
+F 3 "~" H 4400 3950 50  0001 C CNN
+	1    4400 3950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4050 3950 4100 3950
+$Comp
+L power:Earth #PWR0168
+U 1 1 60233C0D
+P 4100 3950
+F 0 "#PWR0168" H 4100 3700 50  0001 C CNN
+F 1 "Earth" H 4100 3800 50  0001 C CNN
+F 2 "" H 4100 3950 50  0001 C CNN
+F 3 "~" H 4100 3950 50  0001 C CNN
+	1    4100 3950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4400 4200 3750 4200
+Connection ~ 4400 4200
+Wire Wire Line
+	2450 3950 3100 3950
+$Comp
+L dk_Transistors-Bipolar-BJT-Single:BC817-40_215 Q3
+U 1 1 60235E4F
+P 4500 4700
+F 0 "Q3" H 4687 4753 60  0000 L CNN
+F 1 "BC817K-40_215" H 4687 4647 60  0000 L CNN
+F 2 "digikey-footprints:SOT-23-3" H 4700 4900 60  0001 L CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BC817K_SER.pdf" H 4700 5000 60  0001 L CNN
+F 4 "" H 4700 5100 60  0001 L CNN "Digi-Key_PN"
+F 5 "" H 4700 5200 60  0001 L CNN "MPN"
+F 6 "" H 4700 5300 60  0001 L CNN "Category"
+F 7 "" H 4700 5400 60  0001 L CNN "Family"
+F 8 "" H 4700 5500 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "" H 4700 5600 60  0001 L CNN "DK_Detail_Page"
+F 10 "" H 4700 5700 60  0001 L CNN "Description"
+F 11 "" H 4700 5800 60  0001 L CNN "Manufacturer"
+F 12 "" H 4700 5900 60  0001 L CNN "Status"
+	1    4500 4700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R25
+U 1 1 60239224
+P 4950 4700
+F 0 "R25" V 4743 4700 50  0000 C CNN
+F 1 "10k" V 4834 4700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 4880 4700 50  0001 C CNN
+F 3 "~" H 4950 4700 50  0001 C CNN
+	1    4950 4700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5200 4700 5100 4700
+Wire Wire Line
+	4800 4700 4700 4700
+Wire Wire Line
+	4400 4500 4400 4450
+Wire Wire Line
+	4400 4450 3500 4450
+Wire Wire Line
+	3500 4450 3500 4050
+Wire Wire Line
+	3500 4050 2450 4050
+$Comp
+L dk_Transistors-Bipolar-BJT-Single:BC817-40_215 Q4
+U 1 1 6023FAFF
+P 4500 5400
+F 0 "Q4" H 4687 5453 60  0000 L CNN
+F 1 "BC817K-40_215" H 4687 5347 60  0000 L CNN
+F 2 "digikey-footprints:SOT-23-3" H 4700 5600 60  0001 L CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BC817K_SER.pdf" H 4700 5700 60  0001 L CNN
+F 4 "" H 4700 5800 60  0001 L CNN "Digi-Key_PN"
+F 5 "" H 4700 5900 60  0001 L CNN "MPN"
+F 6 "" H 4700 6000 60  0001 L CNN "Category"
+F 7 "" H 4700 6100 60  0001 L CNN "Family"
+F 8 "" H 4700 6200 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "" H 4700 6300 60  0001 L CNN "DK_Detail_Page"
+F 10 "" H 4700 6400 60  0001 L CNN "Description"
+F 11 "" H 4700 6500 60  0001 L CNN "Manufacturer"
+F 12 "" H 4700 6600 60  0001 L CNN "Status"
+	1    4500 5400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R24
+U 1 1 6023FB05
+P 4950 5400
+F 0 "R24" V 4743 5400 50  0000 C CNN
+F 1 "10k" V 4834 5400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 4880 5400 50  0001 C CNN
+F 3 "~" H 4950 5400 50  0001 C CNN
+	1    4950 5400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4800 5400 4700 5400
+$Comp
+L power:Earth #PWR0169
+U 1 1 6023FB0C
+P 4400 5700
+F 0 "#PWR0169" H 4400 5450 50  0001 C CNN
+F 1 "Earth" H 4400 5550 50  0001 C CNN
+F 2 "" H 4400 5700 50  0001 C CNN
+F 3 "~" H 4400 5700 50  0001 C CNN
+	1    4400 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 5700 4400 5600
+Wire Wire Line
+	4400 5200 4400 5150
+Wire Wire Line
+	4400 4950 4400 4900
+$Comp
+L power:Earth #PWR0170
+U 1 1 6023AA21
+P 4400 4950
+F 0 "#PWR0170" H 4400 4700 50  0001 C CNN
+F 1 "Earth" H 4400 4800 50  0001 C CNN
+F 2 "" H 4400 4950 50  0001 C CNN
+F 3 "~" H 4400 4950 50  0001 C CNN
+	1    4400 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 5400 5100 5400
+Wire Wire Line
+	3400 5150 3400 4150
+Wire Wire Line
+	3400 4150 2450 4150
+Wire Wire Line
+	3400 5150 4400 5150
+$Comp
+L power:Earth #PWR0171
+U 1 1 6024E940
+P 3300 4650
+F 0 "#PWR0171" H 3300 4400 50  0001 C CNN
+F 1 "Earth" H 3300 4500 50  0001 C CNN
+F 2 "" H 3300 4650 50  0001 C CNN
+F 3 "~" H 3300 4650 50  0001 C CNN
+	1    3300 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 4650 3300 4250
+Wire Wire Line
+	3300 4250 2450 4250
+$Comp
+L Diode:1N5819 D6
+U 1 1 60250E13
+P 2100 5100
+F 0 "D6" H 2100 4883 50  0000 C CNN
+F 1 "1N5819" H 2100 4974 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-123F" H 2100 4925 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 2100 5100 50  0001 C CNN
+	1    2100 5100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2250 5100 2550 5100
+Wire Wire Line
+	2550 5100 2550 4450
+Wire Wire Line
+	2550 4450 2450 4450
+$Comp
+L power:+5V #PWR0172
+U 1 1 60252DFD
+P 1750 5000
+F 0 "#PWR0172" H 1750 4850 50  0001 C CNN
+F 1 "+5V" H 1765 5173 50  0000 C CNN
+F 2 "" H 1750 5000 50  0001 C CNN
+F 3 "" H 1750 5000 50  0001 C CNN
+	1    1750 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 5000 1750 5100
+Wire Wire Line
+	1750 5100 1950 5100
+$Comp
+L Diode:BAT54S D5
+U 1 1 6025511B
+P 3600 6200
+F 0 "D5" H 3600 6425 50  0000 C CNN
+F 1 "BAT54S" H 3600 6334 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3675 6325 50  0001 L CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds11005.pdf" H 3480 6200 50  0001 C CNN
+	1    3600 6200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0173
+U 1 1 60256AC2
+P 3200 6200
+F 0 "#PWR0173" H 3200 6050 50  0001 C CNN
+F 1 "+3.3V" V 3215 6328 50  0000 L CNN
+F 2 "" H 3200 6200 50  0001 C CNN
+F 3 "" H 3200 6200 50  0001 C CNN
+	1    3200 6200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:Earth #PWR0174
+U 1 1 60257452
+P 4000 6200
+F 0 "#PWR0174" H 4000 5950 50  0001 C CNN
+F 1 "Earth" H 4000 6050 50  0001 C CNN
+F 2 "" H 4000 6200 50  0001 C CNN
+F 3 "~" H 4000 6200 50  0001 C CNN
+	1    4000 6200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C6
+U 1 1 60257E40
+P 3800 6750
+F 0 "C6" H 3915 6796 50  0000 L CNN
+F 1 "100n" H 3915 6705 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 3838 6600 50  0001 C CNN
+F 3 "~" H 3800 6750 50  0001 C CNN
+	1    3800 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R26
+U 1 1 60258481
+P 3200 6500
+F 0 "R26" V 2993 6500 50  0000 C CNN
+F 1 "470" V 3084 6500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 3130 6500 50  0001 C CNN
+F 3 "~" H 3200 6500 50  0001 C CNN
+	1    3200 6500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R28
+U 1 1 60258B53
+P 3000 6750
+F 0 "R28" H 3070 6796 50  0000 L CNN
+F 1 "100k" H 3070 6705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 2930 6750 50  0001 C CNN
+F 3 "~" H 3000 6750 50  0001 C CNN
+	1    3000 6750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 6500 3800 6500
+Wire Wire Line
+	3600 6400 3600 6500
+Connection ~ 3600 6500
+Wire Wire Line
+	3600 6500 3350 6500
+Wire Wire Line
+	3800 6600 3800 6500
+Connection ~ 3800 6500
+Wire Wire Line
+	3800 6500 3600 6500
+Wire Wire Line
+	4000 6200 3900 6200
+Wire Wire Line
+	3300 6200 3200 6200
+$Comp
+L power:Earth #PWR0175
+U 1 1 602617F4
+P 3800 7000
+F 0 "#PWR0175" H 3800 6750 50  0001 C CNN
+F 1 "Earth" H 3800 6850 50  0001 C CNN
+F 2 "" H 3800 7000 50  0001 C CNN
+F 3 "~" H 3800 7000 50  0001 C CNN
+	1    3800 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR0176
+U 1 1 60261D01
+P 3000 7000
+F 0 "#PWR0176" H 3000 6750 50  0001 C CNN
+F 1 "Earth" H 3000 6850 50  0001 C CNN
+F 2 "" H 3000 7000 50  0001 C CNN
+F 3 "~" H 3000 7000 50  0001 C CNN
+	1    3000 7000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 7000 3000 6900
+Wire Wire Line
+	3800 7000 3800 6900
+Wire Wire Line
+	3050 6500 3000 6500
+Wire Wire Line
+	3000 6500 3000 6600
+Wire Wire Line
+	3000 6500 2650 6500
+Wire Wire Line
+	2650 6500 2650 4350
+Wire Wire Line
+	2650 4350 2450 4350
+Connection ~ 3000 6500
+$EndSCHEMATC
